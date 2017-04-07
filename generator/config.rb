@@ -40,4 +40,4 @@ end
 
 activate :livereload
 activate :relative_assets
-activate :directory_indexes
+# activate :directory_indexes
