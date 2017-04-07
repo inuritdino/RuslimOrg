@@ -18,15 +18,21 @@
     <body class="<%= page_classes %>">
       <header>
 	<div id="main-menu">
-	  <a href="/index.html"><img src="/images/ruslim_logo.png"></a>
-	    <div id="dropdown">
-	      <a href="/about-us.html">About</a>
-	      <a href="http://ruslim.org">Main Web-site</a>
-	    </div>
+	  <% link_to '/index.html' do %>
+	  <%= image_tag 'ruslim_logo.png' %>
+	  <% end %>
+	  <div id="dropdown">
+	    <%= link_to 'About', '/about-us.html' %>
+	    <%= link_to 'Main web-site', 'http://ruslim.org' %>
+	  </div>
 	</div>
 	<div id="lang">
-	  <a href="/ru/index.html"><img src="/images/ru_flag.png"></a>
-	  <a href="/index.html"><img src="/images/en.png"></a>
+	  <% link_to '/ru/index.html' do %>
+	  <%= image_tag 'ru_flag.png' %>
+	  <% end %>
+	  <% link_to '/index.html' do %>
+	  <%= image_tag 'en.png' %>
+	  <% end %>
 	</div>
     </header>
     <article>
@@ -43,9 +49,9 @@
   <div>
       <h3>Quick Links</h3>
       <ul>
-	<li><a href="http://ruslim.org">Ruslim.Org</a></li>
-	<li><a href="/index.html">Home</a></li>
-	<li><a href="/about-us/index.html">About Us</a></li>
+	<li><%= link_to 'Ruslim.Org', 'http://ruslim.org' %></li>
+	<li><%= link_to 'Home', '/index.html' %></li>
+	<li><%= link_to 'About Us', '/about-us.html' %></li>
       </ul>
   </div>
   <div>
@@ -66,17 +72,17 @@
     <footer>
       <div>
 	<ul>
-	  <li><a href="/about-us/about-us.html">About Us</a>
+	  <li><%= link_to 'About Us', '/about-us.html' %>
 	</ul>
       </div>
       <div>
 	<ul>
-	  <li><a href="/about-us/about-us.html">About Us</a>
+	  <li><%= link_to 'About Us', '/about-us.html' %>
 	</ul>
       </div>
       <div>
 	<ul>
-	  <li><a href="/about-us/about-us.html">About Us</a>
+	  <li><%= link_to 'About Us', '/about-us.html' %>
 	</ul>
       </div>
     </footer>

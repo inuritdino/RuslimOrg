@@ -40,4 +40,14 @@ end
 
 activate :livereload
 activate :relative_assets
-# activate :directory_indexes
+activate :directory_indexes
+configure :build do
+  set :http_prefix, '/RuslimOrg'
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.remote = 'https://github.com/inuritdino/RuslimOrg'
+  deploy.branch = 'gh-pages'
+  deploy.strategy = :force_push
+end
