@@ -1,0 +1,1 @@
+<%= partial("iterate-with-summary", :locals => { :name => "Featured content", :header_level => 1, :folder => "essay/", :not_folder => "ru/", :max_count => 5, :item_header_level => 3, :longer => true, :featured => true}) %>
