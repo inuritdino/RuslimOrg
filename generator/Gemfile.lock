@@ -6,7 +6,7 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.5.0)
+    addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     backports (3.7.0)
     coffee-script (2.4.1)
@@ -35,6 +35,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     kramdown (1.13.2)
+    libv8 (3.16.14.19-x86_64-linux)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -72,7 +73,7 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
-    middleman-deploy (1.0.0)
+    middleman-deploy (2.0.0.pre.alpha)
       middleman-core (>= 3.2)
       net-sftp
       ptools
@@ -80,10 +81,19 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-search (0.10.0)
+      middleman-core (>= 3.2)
+      nokogiri (~> 1.6)
+      therubyracer (~> 0.12.2)
+    mini_portile2 (2.1.0)
     minitest (5.10.1)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
+    nokogiri (1.7.1)
+      mini_portile2 (~> 2.1.0)
+    org-ruby (0.9.12)
+      rubypants (~> 0.2)
     padrino-helpers (0.13.3.3)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.3)
@@ -99,23 +109,30 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    ref (2.0.0)
+    rubypants (0.6.0)
     sass (3.4.23)
     servolux (0.13.0)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    uglifier (3.1.11)
+    uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 4.2)
-  middleman-deploy (~> 1.0)
+  middleman (~> 4.2.1)
+  middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-livereload
+  middleman-search
+  org-ruby (>= 0.6.2)
   tzinfo-data
   wdm (~> 0.1.0)
 

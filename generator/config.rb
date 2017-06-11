@@ -36,18 +36,31 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+  # set :http_prefix, '/RuslimOrg'
 end
 
 activate :livereload
-activate :relative_assets
+#activate :relative_assets
 activate :directory_indexes
-configure :build do
-  set :http_prefix, '/RuslimOrg'
-end
+set :relative_links, true
+#bactivate :compass
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.remote = 'https://github.com/inuritdino/RuslimOrg'
+  deploy.remote = 'origin'
   deploy.branch = 'gh-pages'
   deploy.strategy = :force_push
 end
+
+activate :search do |search|
+  search.resources = ['essay/']
+  search.index_path = 'lunr-index.json'
+  search.fields = {
+    title: {boost: 100, store: true, required: true},
+    content: {boost: 50},
+    url: {index: false, store: true},
+    author: {boost: 30}
+  }
+end
+
+page "/ru/*", :layout => "ru_layout"

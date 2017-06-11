@@ -1,6 +1,5 @@
 ---
-name: News2
-date: 15-03-2017
+date: 15.03.2017
 ---
 
 Our project got reformulated: we are now an Online Epistemological

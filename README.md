@@ -14,3 +14,12 @@ fields of expertise - something we expect from others too.
 
 Finally, we are brave people that challenge established (false)
 paradigms to get closer to truth.
+
+--------
+
+The epistemological tutorial is available directly via GitHub Pages of this
+repository (see **gh-pages** branch), that is at: <https://inuritdino.github.io/RuslimOrg>.
+The original address <http://ruslim.org>, however, is the primary connection point
+
+Sincerely,
+Ruslim.Org team.

@@ -1,6 +1,5 @@
 ---
-name: News1
-date: 31-03-2017
+date: 31.03.2017
 ---
 
 We are starting a new web site for our project as well as migration to

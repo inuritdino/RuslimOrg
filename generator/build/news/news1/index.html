@@ -1,84 +1,182 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- <!doctype html> -->
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
+<!doctype html>
 <html>
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta charset="utf-8" />
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Ruslim.Org</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
-
-    <link href="../../RuslimOrg/stylesheets/site.css" rel="stylesheet" />
-    <script src="../../RuslimOrg/javascripts/site.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" /> 
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+    <script src="https://unpkg.com/lunr/lunr.min.js"></script>
   </head>
-
-    <body class="news news_news1 news_news1_index">
+      <body class="news news_news1 news_news1_index">
       <header>
 	<div id="main-menu">
-<a href="/RuslimOrg/">	  <img src="../../RuslimOrg/images/ruslim_logo.png" alt="Ruslim logo" />
+<a href="../../">	  <img src="/images/ruslim_logo.png" alt="Ruslim logo" />
 </a>	  <div id="dropdown">
-	    <a href="/RuslimOrg/about-us/">About</a>
-	    <a href="http://ruslim.org">Main web-site</a>
+	    <a href="../../essay/">Essay</a>
+	    <a href="../../reading-club/">Reading club</a>
+	    <a href="../../valuable/">Valuable</a>
+	    <a href="../../about-us/epistemological-tutorial/">About us</a>
 	  </div>
 	</div>
 	<div id="lang">
-<a href="/ru/index.html">	  <img src="../../RuslimOrg/images/ru_flag.png" alt="Ru flag" />
-</a><a href="/RuslimOrg/">	  <img src="../../RuslimOrg/images/en.png" alt="En" />
-</a>	</div>
-    </header>
-    <article>
-      <h1 id="name">News1</h1>
-      <p id="date">Date: 31-03-2017</div>
-      <p>We are starting a new web site for our project as well as migration to
+	  <span id="lang-smaller"><a href="../../ru/">Ру</a></span>
+	  <span id="lang-bigger"><a href="../../">En</a></span>
+	</div>
+	<!-- <div id="search-box"> -->
+	<!--   <form id="search" method="get" action="" onsubmit="showSearchResults('episteme')"> -->
+	<!--     <input type="text" value="" size="21" maxlength="120"/> -->
+	<!--     <input type="submit" value="search" /> -->
+	<!--   </form> -->
+	<!--   <button onclick="showSearchResults("episteme")">Click me</button> -->
+	<!-- </div> -->
+	<!-- <div id="header-image"> -->
+	<!--   <img src="/images/banners/ruslim_theme_en.jpg" /> -->
+	<!-- </div> -->
+	<div id="print-image">
+	  <img src="/images/ruslim_logo_print.png" />
+	</div>
+	<div id="print-header">
+	  Thanks for staying with us even off-line. Ruslim.Org is all
+	  about reading and we hope you enjoy it. Links are underlined
+	  and hidden from you in the print layout: Check them out when
+	  you are back on-line.
+	</div>
+      </header>
+      <article>
+	<div id="content">
+	  <div id="buttons">
+	    <span id="print" onclick="window.print()">print</span> <span id="hide-right" onclick="hideRightPanel()">&raquo;</span>
+	  </div>
+	  <p id="date">Date: 31.03.2017</p>
+	  <p>We are starting a new web site for our project as well as migration to
 new servers. The transmission will take place in 2017. We ask for
 patience and understanding from our users. Meanwhile, the newly styled
 pages will be available via GitHub Pages project (link to be
 anounced).</p>
 
-    </article>
-<div class="right">
-  <div>
-      <h3>Quick Links</h3>
-      <ul>
-	<li><a href="http://ruslim.org">Ruslim.Org</a></li>
-	<li><a href="/RuslimOrg/">Home</a></li>
-	<li><a href="/RuslimOrg/about-us/">About Us</a></li>
-      </ul>
-  </div>
-  <div>
-    <h3>Menu 1</h3>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Menu 2</h3>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-    </ul>
-  </div>
-    </div>
-    <footer>
-      <div>
-	<ul>
-	  <li><a href="/RuslimOrg/about-us/">About Us</a>
-	</ul>
-      </div>
-      <div>
-	<ul>
-	  <li><a href="/RuslimOrg/about-us/">About Us</a>
-	</ul>
-      </div>
-      <div>
-	<ul>
-	  <li><a href="/RuslimOrg/about-us/">About Us</a>
-	</ul>
-      </div>
-    </footer>
-  </body>
+	</div>
+	<div id="right">
+	  <div>
+	    <h3>Themes</h3>
+	    
+
+<ul>
+  <li><a href="../../tags/Ruslim.Org/">Ruslim.org</a><span class="tag-count">3</span></li>
+  <li><a href="../../tags/epistemology/">Epistemology</a><span class="tag-count">1</span></li>
+</ul>
+
+	  </div>
+	  <div>
+	  </div>
+	  <div>
+	    <h3>Recent articles</h3>
+	    
+<ul>
+    <li>25.05.2017: <a href="../../about-us/epistemological-tutorial/">The Epistemological Tutorial</a></li>
+</ul>
+
+
+	  </div>
+	  <div>
+	    <h3>Latest news</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="date">
+Date: 10.06.2017
+</div>
+
+<div class="summary">
+<p>First pages are now available! However, the materials still need
+further processing.</p>
+
+<p class="read-more"><a href="../news4/">Read more</a></p>
+</div>
+
+
+
+
+<div class="date">
+Date: 28.05.2017
+</div>
+
+<div class="summary">
+<p>We are still in the process of transformation. Our services may
+break. The new interface to Ruslim.Org is now available directly
+through <a href="https://inuritdino.github.io/RuslimOrg/">https://inuritdino.github.io/RuslimOrg/</a> or via the original
+<a href="http://ruslim.org">http://ruslim.org</a> .</p>
+
+<p class="read-more"><a href="../news3/">Read more</a></p>
+</div>
+
+
+
+
+<div class="date">
+Date: 31.03.2017
+</div>
+
+<div class="summary">
+<p>We are starting a new web site for our project as well as migration to
+new servers. The transmission will take place in 2017. We ask for
+patience and understanding from our users. Meanwhile, the newly styled
+pages will be available via GitHub Pages project (link to be
+anounced).</p>
+
+<p class="read-more"><a href="./">Read more</a></p>
+</div>
+
+
+
+
+
+
+	  </div>
+	  <div id="last-update">
+	    Last updated: 11.06.2017 17:29
+	  </div>
+	</div>
+      </article>
+      <footer>
+	<div>
+	  <ul>
+	    <li><a href="../../contact-us/">Contact us</a></li>
+	    <li><a href="http://facebook.com/RuslimOrg">Facebook</a></li>
+	  </ul>
+	</div>
+	<div>
+	  <ul>
+	    <li><a href="/about-us.html">About Us</a></li>
+	    <li><a href="../../">Home</a></li>
+	  </ul>
+	</div>
+	<div>
+	  <ul>
+	    <li><a href="../../about-us/technical-info/">Technical information</a></li>
+	    <li><a href="../../about-us/how-to-read/">How to Read</a></li>
+	  </ul>
+	</div>
+	<div id="copyright">
+	  <p>&copy; 2013&ndash;2017 Ruslim.Org</p>
+	  <p>All rights reserved.</p>
+	</div>
+      </footer>
+    </body>
 </html>
