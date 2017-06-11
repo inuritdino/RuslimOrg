@@ -1,9 +1,0 @@
----
-date: 31.03.2017
----
-
-We are starting a new web site for our project as well as migration to
-new servers. The transmission will take place in 2017. We ask for
-patience and understanding from our users. Meanwhile, the newly styled
-pages will be available via GitHub Pages project (link to be
-anounced).
