@@ -1,4 +1,4 @@
-# RuslimOrg repository for the Ruslim.Org project
+# A repository for the Ruslim.Org project
 
 Ruslim.Org is an online tutorial on epistemological matters: what we
 know and how we know it.  We stress, however, a practical implication
