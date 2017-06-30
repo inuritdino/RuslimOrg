@@ -11,7 +11,7 @@ body {
 
 body.print {
   color: black;
-  font-size: 17px; }
+  font-size: 13px; }
 
 header {
   margin: 1px 0 4px 0;
@@ -67,7 +67,7 @@ div#content {
   _height: 250px; }
 
 div#right {
-  font-size: 15px;
+  font-size: 95%;
   width: calc(100% - 40px);
   margin: 4px auto;
   padding: 0 20px;
@@ -167,8 +167,8 @@ div#main-menu a img {
   bottom: -6px; }
 
 div#main-menu a {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
+  font-family: 'Oswald', Georgia, sans-serif;
+  font-size: 1.3em;
   text-decoration: none;
   color: black;
   margin: 0 15px 0 0; }
