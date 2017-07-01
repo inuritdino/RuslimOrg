@@ -298,7 +298,7 @@ div.summary {
 
 .summary .read-more {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   right: 0;
   width: 100%;
   text-align: right;
