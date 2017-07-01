@@ -294,18 +294,18 @@ div.summary, div.summary p {
 div.summary {
   overflow: hidden;
   text-overflow: clip;
-  max-height: 50px;
+  max-height: 48px;
   position: relative; }
 
 .summary .read-more {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   right: 0;
   width: 100%;
   text-align: right;
   margin: 0;
   padding: 0 0;
-  height: 1.4em;
+  height: 1.5em;
   background-image: linear-gradient(to right, rgba(242, 242, 242, 0) 0%, #f2f2f2 60%); }
 
 .article-list {
