@@ -272,6 +272,7 @@ span.tag-count {
   padding: 0 10px;
   margin-left: 5px;
   border-radius: 15px;
+  border: 1px #aaa solid;
   background-color: #ff6666;
   word-spacing: 5px;
   color: #fcfcfc;
