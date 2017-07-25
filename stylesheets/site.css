@@ -139,7 +139,7 @@ footer ul > li > a {
   color: #ddd; }
   footer ul > li > a:focus, footer ul > li > a:hover {
     color: red;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 footer div#copyright {
   color: #111;
