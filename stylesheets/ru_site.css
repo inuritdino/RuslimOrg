@@ -89,7 +89,8 @@ div#right {
 
 #right div ul {
   padding: 0 0 0 15px;
-  margin: 0; }
+  margin: 0;
+  text-align: left; }
 
 #buttons {
   position: relative;
@@ -133,7 +134,7 @@ footer ul {
 
 footer ul > li {
   margin-left: 35%;
-  text-align: justify; }
+  text-align: left; }
 
 footer ul > li > a {
   color: #ddd; }
