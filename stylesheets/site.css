@@ -349,6 +349,11 @@ div.summary {
   box-shadow: inset 0 0 2px black, 0 0 2px black;
   background-color: #e4e4e4; }
 
+blockquote {
+  width: 90%;
+  font-style: italic;
+  margin: auto; }
+
 @media only screen and (min-width: 720px) {
   div#header-image {
     display: block; }
