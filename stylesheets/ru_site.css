@@ -357,104 +357,82 @@ blockquote {
 @media only screen and (min-width: 720px) {
   div#header-image {
     display: block; }
-
   article {
     width: 720px; }
-
   div#content {
     width: 680px;
     border-style: none; }
-
   div#right {
     width: 680px; }
-
   footer {
     width: 680px; }
-
   header {
     width: 680px; }
-
   .front-page {
     width: 340px;
     float: left;
     text-align: center;
     margin-left: 0px; }
-
   div.front-page ul > li {
     text-align: justify;
     margin: 0 5%; } }
+
 @media only screen and (min-width: 1047px) {
   #header-image img {
     width: auto; }
-
   article {
     width: 1046px; }
-
   div#content {
     width: 680px;
     border-right: solid 1px #ddd; }
-
   div#right {
     width: 280px;
     border-left: solid 1px #ddd; }
-
   footer {
     width: 1005px; }
-
   header {
     width: 1005px; }
-
   div#main-menu:hover #dropdown {
     display: inline-block; }
-
   div#dropdown {
     padding: 0;
     position: relative;
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
     display: inline-block;
     z-index: 0;
     width: auto; }
     div#dropdown a {
       display: inline; }
-
   div#lang {
     float: right; }
-
   #buttons #hide-right {
     display: inline; } }
+
 @media print {
   header #main-menu, header #dropdown, header #lang, header #search-box, header #header-image {
     display: none; }
-
   header #print-header {
     display: block;
     border: 1px solid black;
     width: 100%;
     padding: 2px;
     border-radius: 3px; }
-
   header #print-image {
     display: block; }
-
   footer, article #right, #buttons {
     display: none; }
-
   body {
     overflow: visible;
     color: black;
     font-size: 12px; }
-
   article h1 {
     padding: 0; }
-
   div#content {
     display: inline; }
-
   a {
     color: black;
     text-decoration: underline; }
-
   /* a[href^="http://"]:after,a[href^="https://"]:after,a[href^="www."]:after { */
   /* 	text-decoration: none; */
   /* 	content: " (" attr(href) ")"; */
